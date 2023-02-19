@@ -1,0 +1,727 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 25px;
+}
+
+:root {
+    --main-padding: 8rem;
+}
+
+p {
+    line-height: 1.8;
+}
+
+/* START HEADER */
+.navbar .navbar-brand {
+    letter-spacing: 4px;
+    padding: 10px;
+}
+
+.navbar .navbar-brand:hover {
+    background-color: #ccc;
+}
+
+.nav-link {
+    color: black;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.nav-link:hover {
+    background-color: #ccc;
+}
+
+#home {
+    background-image: url(../imgs/mac.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#home h1 {
+    font-size: 4rem;
+}
+
+#home button {
+    background-color: #fff;
+    opacity: 0.60;
+    font-size: 18px;
+}
+
+#home button:hover {
+    opacity: 0.8;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.social-icons i {
+    opacity: 0.5;
+    margin-left: 2px;
+    font-size: 17px;
+}
+
+.social-icons i:hover {
+    color: #777;
+}
+
+@media screen and (max-width: 600px) {
+    #home h1 {
+        font-size: 2rem;
+        line-height: 1.8;
+    }
+
+    #home p {
+        font-size: 17px !important;
+        line-height: 1.8;
+    }
+
+    #home button {
+        font-size: 17px;
+    }
+}
+
+/* END HEADER */
+
+/* START ABOUT SECTION */
+#about {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+
+.main-heading h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.main-heading p {
+    font-size: 1.1rem;
+    margin-bottom: 4rem;
+}
+
+#about .row .about-content i {
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+
+#about .row .about-content .p1 {
+    font-size: 1.1rem;
+}
+
+#about .row .about-content .p2 {
+    font-size: 15px;
+}
+
+nav {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+/* END ABOUT SECTION */
+
+/* START DESIGN SECTION */
+.design {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    background-color: #f1f1f1;
+}
+
+.design .row h3 {
+    font-weight: 400;
+}
+
+.design .row p {
+    font-size: 15px;
+}
+
+.design .row .bnt-design {
+    font-size: 15px;
+    background-color: black;
+
+}
+
+/* END DESIGN SECTION */
+
+/* START TEAM SECTION */
+#team {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+
+#team .row .team-content {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+
+}
+
+#team .row .team-content p {
+    font-size: 15px;
+}
+
+.main-heading h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.main-heading p {
+    font-size: 1.1rem;
+    margin-bottom: 4rem;
+}
+
+#team .row .team-content .img-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.row .bnt-team:hover {
+    background-color: #ccc;
+}
+
+/* END TEAM SECTION */
+
+/* START RATING */
+.rating {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    background-color: #616161;
+}
+
+.rating .rating-content span {
+    font-size: 2.3rem;
+
+}
+
+/* END RATING */
+
+/* START WORK SECTION */
+#work {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+
+#work .row .work-content img:hover {
+    opacity: 0.5;
+}
+
+/* END WORK SECTION */
+
+/* SYART SKILLS SECTION */
+.skills {
+    padding-top: 7em;
+    padding-bottom: 7em;
+    background-color: #f1f1f1;
+}
+
+.skills .row h3 {
+    font-weight: 400;
+}
+
+.skills .row p {
+    font-size: 15px;
+}
+
+.skills .progress {
+    height: 30px;
+    background-color: #9e9e9e;
+}
+
+.progress-bar {
+    background-color: #616161;
+    font-size: 15px;
+}
+
+.skills .skills-p {
+    letter-spacing: 4px;
+}
+
+/* END SKILLS SECTION */
+
+/* START PRICING SECTION */
+#pricing {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    background-color: #616161;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+#pricing ul li {
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+}
+
+#pricing .pricing-content .bnt-pricing:hover {
+    background-color: #ddd !important;
+    color: black !important;
+
+}
+
+#pricing .pricing-content .active {
+    background-color: #f44336;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#pricing .pricing-content ul li:hover {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%) !important;
+}
+
+/* END PRICING SECTION */
+
+/* START CONTACT SECTION */
+#contact {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    background-color: #f1f1f1;
+}
+
+#contact .contact-content .text p i {
+    font-size: 30px;
+}
+
+#contact .contact-content .bnt-contact:hover {
+    background-color: #ccc !important;
+    color: black !important;
+}
+
+#contact .img-location img {
+    filter: grayscale(75%);
+}
+
+/* END CONTACT SECTION */
+
+/* START FOOTER  */
+footer {
+    padding-top: var(--main-padding);
+   padding-bottom: 4rem;
+    background-color: #000;
+}
+
+footer .footer-content .bnt-footer {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-size: 0.94rem;
+    
+
+}
+footer .footer-content .bnt-footer:hover {
+    background-color: #f1f1f1;
+}
+
+footer .footer-content .icon-footer i {
+    font-size: 20px;
+    margin-right: 0.25rem;
+    transition: 0.2s;
+}
+footer .footer-content .icon-footer i:hover{
+    color: #616161;
+}
+
+footer .footer-content p {
+    font-size: 0.94rem ;
+}
+footer .footer-content p a{
+    color: #fff;
+}
+footer .footer-content p:hover a{
+    color: green;
+}
+/* END  FOOTER  */
+
+
+
+/* prefixes */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 20 version
+*/
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 25px;
+}
+
+:root {
+    --main-padding: 8rem;
+}
+
+p {
+    line-height: 1.8;
+}
+
+/* START HEADER */
+.navbar .navbar-brand {
+    letter-spacing: 4px;
+    padding: 10px;
+}
+
+.navbar .navbar-brand:hover {
+    background-color: #ccc;
+}
+
+.nav-link {
+    color: black;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.nav-link:hover {
+    background-color: #ccc;
+}
+
+#home {
+    background-image: url(../imgs/mac.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#home h1 {
+    font-size: 4rem;
+}
+
+#home button {
+    background-color: #fff;
+    opacity: 0.60;
+    font-size: 18px;
+}
+
+#home button:hover {
+    opacity: 0.8;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.social-icons i {
+    opacity: 0.5;
+    margin-left: 2px;
+    font-size: 17px;
+}
+
+.social-icons i:hover {
+    color: #777;
+}
+
+@media screen and (max-width: 600px) {
+    #home h1 {
+        font-size: 2rem;
+        line-height: 1.8;
+    }
+
+    #home p {
+        font-size: 17px !important;
+        line-height: 1.8;
+    }
+
+    #home button {
+        font-size: 17px;
+    }
+}
+
+/* END HEADER */
+
+/* START ABOUT SECTION */
+#about {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+
+.main-heading h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.main-heading p {
+    font-size: 1.1rem;
+    margin-bottom: 4rem;
+}
+
+#about .row .about-content i {
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+
+#about .row .about-content .p1 {
+    font-size: 1.1rem;
+}
+
+#about .row .about-content .p2 {
+    font-size: 15px;
+}
+
+nav {
+    -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+            box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+/* END ABOUT SECTION */
+
+/* START DESIGN SECTION */
+.design {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    background-color: #f1f1f1;
+}
+
+.design .row h3 {
+    font-weight: 400;
+}
+
+.design .row p {
+    font-size: 15px;
+}
+
+.design .row .bnt-design {
+    font-size: 15px;
+    background-color: black;
+
+}
+
+/* END DESIGN SECTION */
+
+/* START TEAM SECTION */
+#team {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+
+#team .row .team-content {
+    -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+            box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+
+}
+
+#team .row .team-content p {
+    font-size: 15px;
+}
+
+.main-heading h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.main-heading p {
+    font-size: 1.1rem;
+    margin-bottom: 4rem;
+}
+
+#team .row .team-content .img-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.row .bnt-team:hover {
+    background-color: #ccc;
+}
+
+/* END TEAM SECTION */
+
+/* START RATING */
+.rating {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    background-color: #616161;
+}
+
+.rating .rating-content span {
+    font-size: 2.3rem;
+
+}
+
+/* END RATING */
+
+/* START WORK SECTION */
+#work {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+
+#work .row .work-content img:hover {
+    opacity: 0.5;
+}
+
+/* END WORK SECTION */
+
+/* SYART SKILLS SECTION */
+.skills {
+    padding-top: 7em;
+    padding-bottom: 7em;
+    background-color: #f1f1f1;
+}
+
+.skills .row h3 {
+    font-weight: 400;
+}
+
+.skills .row p {
+    font-size: 15px;
+}
+
+.skills .progress {
+    height: 30px;
+    background-color: #9e9e9e;
+}
+
+.progress-bar {
+    background-color: #616161;
+    font-size: 15px;
+}
+
+.skills .skills-p {
+    letter-spacing: 4px;
+}
+
+/* END SKILLS SECTION */
+
+/* START PRICING SECTION */
+#pricing {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    background-color: #616161;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+#pricing ul li {
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+}
+
+#pricing .pricing-content .bnt-pricing:hover {
+    background-color: #ddd !important;
+    color: black !important;
+
+}
+
+#pricing .pricing-content .active {
+    background-color: #f44336;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#pricing .pricing-content ul li:hover {
+    -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%) !important;
+            box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%) !important;
+}
+
+/* END PRICING SECTION */
+
+/* START CONTACT SECTION */
+#contact {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    background-color: #f1f1f1;
+}
+
+#contact .contact-content .text p i {
+    font-size: 30px;
+}
+
+#contact .contact-content .bnt-contact:hover {
+    background-color: #ccc !important;
+    color: black !important;
+}
+
+#contact .img-location img {
+    -webkit-filter: grayscale(75%);
+            filter: grayscale(75%);
+}
+
+/* END CONTACT SECTION */
+
+/* START FOOTER  */
+footer {
+    padding-top: var(--main-padding);
+   padding-bottom: 4rem;
+    background-color: #000;
+}
+
+footer .footer-content .bnt-footer {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-size: 0.94rem;
+    
+
+}
+footer .footer-content .bnt-footer:hover {
+    background-color: #f1f1f1;
+}
+
+footer .footer-content .icon-footer i {
+    font-size: 20px;
+    margin-right: 0.25rem;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+footer .footer-content .icon-footer i:hover{
+    color: #616161;
+}
+
+footer .footer-content p {
+    font-size: 0.94rem ;
+}
+footer .footer-content p a{
+    color: #fff;
+}
+footer .footer-content p:hover a{
+    color: green;
+}
+/* END  FOOTER  */
+
+
+
